@@ -33,10 +33,10 @@ document.querySelectorAll('.allPaths').forEach(e => {
             window.onmousemove = function(event) {
                 const x = event.clientX;
                 const y = event.clientY;
-                document.getElementById("detail-container").style.top = y - 20 + "px";
-                document.getElementById("detail-container").style.left = x - 20 + "px";
+                document.getElementById("detail-container").style.top = y + 10 + "px";
+                document.getElementById("detail-container").style.left = x + 20 + "px"; 
             };
-            e.style.fill = "pink";
+            e.style.fill = "blue";
             const year = countryYears[countryId];  
             document.getElementById("detail-container").style.display = "block"; 
             document.querySelector('.name').innerHTML = `${countryId}<br>${year}`;
