@@ -37,7 +37,7 @@ document.querySelectorAll('.allPaths').forEach(e => {
                 document.getElementById("detail-container").style.top = (y - 40) + "px"; 
                 document.getElementById("detail-container").style.left = (x + 20) + "px";
                    };
-            e.style.fill = "blue";
+            e.style.fill = "#594ee6";
       const year = countryYears[countryId];  
             document.getElementById("detail-container").style.display = "block"; 
         
