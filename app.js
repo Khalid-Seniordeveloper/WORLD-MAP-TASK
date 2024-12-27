@@ -1,8 +1,8 @@
 const selectedCountries = [
     "Mexico", "Colombia", "Ecuador", "Peru", "Bolivia", "Chile",
-    "Dominican Republic", "Venez", "Brazil", "Parag",
+    "Dominican Republic", "Venez", "Brazil", "Parag", 
     "Uruguay", "Argentina", "Andorra", "Spain", "Portugal",
-    "Guinea Ecuatorial", "Angola"
+    "Equatorial Guinea", "Angola"
 ];
 const countryYears = {
     "Mexico": 1821,
@@ -20,8 +20,9 @@ const countryYears = {
     "Andorra": 1278,  
     "Spain": 1492,   
     "Portugal": 1139, 
-    "Guinea Ecuatorial": 1968,
+    "Equatorial Guinea": 1968,
     "Angola": 1975
+  
 };
 
 document.querySelectorAll('.allPaths').forEach(e => {
@@ -43,7 +44,11 @@ document.querySelectorAll('.allPaths').forEach(e => {
             
     if (countryId === "Dominican Republic") {
                  document.getElementById("country-flag").src = `flags/Dominican Republic.png`;
-    } else {
+    }   else if(countryId === "Equatorial Guinea"){
+        document.getElementById("country-flag").src = `flags/Equatorial Guinea.png`;
+    }
+    
+    else  {
                 document.getElementById("country-flag").src = `flags/${countryId.toLowerCase().replace(/\s/g, '')}.png`;
             }
 
