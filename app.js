@@ -34,13 +34,14 @@ document.querySelectorAll('.allPaths').forEach(e => {
             window.onmousemove = function(event) {
                 const x = event.clientX;
                 const y = event.clientY;
-                document.getElementById("detail-container").style.top = y + 10 + "px";
-                document.getElementById("detail-container").style.left = x + 20 + "px"; 
-            };
+                document.getElementById("detail-container").style.top = (y - 40) + "px"; 
+                document.getElementById("detail-container").style.left = (x + 20) + "px";
+                   };
             e.style.fill = "blue";
-            const year = countryYears[countryId];  
+      const year = countryYears[countryId];  
             document.getElementById("detail-container").style.display = "block"; 
-            document.querySelector('.name').innerHTML = `${countryId}<br>${year}`;
+        
+    document.querySelector('.name').innerHTML = `${countryId}<br>${year}`;
             
     if (countryId === "Dominican Republic") {
                  document.getElementById("country-flag").src = `flags/Dominican Republic.png`;
@@ -51,8 +52,7 @@ document.querySelectorAll('.allPaths').forEach(e => {
     else  {
                 document.getElementById("country-flag").src = `flags/${countryId.toLowerCase().replace(/\s/g, '')}.png`;
             }
-
-        });
+});
 
         e.addEventListener('mouseleave', function() {
    
