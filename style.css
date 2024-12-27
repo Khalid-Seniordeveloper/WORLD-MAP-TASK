@@ -9,7 +9,7 @@ html{
 body{
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: blue;
+    background-color: #3a89fc;
 }
 .allPaths {
     fill: #ececec;
