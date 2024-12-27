@@ -9,7 +9,7 @@ html{
 body{
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: #3a89fc;
+    
 }
 .allPaths {
     fill: #ececec;
@@ -43,7 +43,7 @@ body{
       margin-right: 10px;
 }
 .head{
-    color: white;
+    color:  black;
     font-size: 3rem;
     text-align: center;
     margin-top: 1rem;
