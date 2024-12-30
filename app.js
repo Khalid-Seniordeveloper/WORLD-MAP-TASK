@@ -1,8 +1,8 @@
 const selectedCountries = [
     "Mexico", "Colombia", "Ecuador", "Peru", "Bolivia", "Chile",
-    "Dominican Republic", "Venez", "Brazil", "Parag", 
+    "Dominican Republi", "Venez", "Brazil", "Parag", 
     "Uruguay", "Argentina", "Andorra", "Spain", "Portugal",
-    "Equatorial Guinea", "Angola"
+    "Equatorial Guine", "Angola"
 ];
 
 const greenCountries = [
@@ -20,7 +20,7 @@ const countryYears = {
     "Peru": 1821,
     "Bolivia": 1825,
     "Chile": 1818,
-    "Dominican Republic": 1844,
+    "Dominican Republi": 1844,
     "Venez": 1811,
     "Brazil": 1822,
     "Parag": 1811,
