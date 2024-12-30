@@ -123,7 +123,11 @@ document.querySelectorAll('.allPaths').forEach(e => {
 });
 
 document.querySelectorAll('.allPaths').forEach(e => {
-    e.addEventListener('mousemove', function(event) {
+    const countryId = e.id;
+    if (selectedCountries.includes(countryId)){
+
+    
+        e.addEventListener('mousemove', function(event) {
         const zoomBox = document.getElementById("zoom-box");
         const zoomSvg = document.getElementById("zoom-svg");
         const rect = e.getBoundingClientRect();
@@ -149,7 +153,7 @@ const translateY = -bbox.y * scale + (zoomBox.clientHeight / 2 - bbox.height * s
          clonedSvg.setAttribute('transform', `scale(${scale}) translate(${translateX}, ${translateY})`);
 
         zoomBox.style.display = "block";
-    });
+    })};
 
     e.addEventListener('mouseleave', function() {
         const zoomBox = document.getElementById("zoom-box");
@@ -158,6 +162,8 @@ const translateY = -bbox.y * scale + (zoomBox.clientHeight / 2 - bbox.height * s
 });
 
 document.querySelectorAll('.allPaths').forEach(e => {
+    const countryId = e.id;
+    if (selectedCountries.includes(countryId)){
 
     e.addEventListener('mousemove', function(event) {
         const zoomBox = document.getElementById("zoom-box");
@@ -179,7 +185,7 @@ const translateY = -bbox.y + (200 / scale - bbox.height) / 2;
 
         zoomedPath.setAttribute('transform', `scale(${scale}) translate(${translateX}, ${translateY})`);
 
- zoomBox.style.display = "block";    });
+ zoomBox.style.display = "block";    })};
 
     e.addEventListener('mouseleave', function() {    const zoomBox = document.getElementById("zoom-box");
         zoomBox.style.display = "none";
