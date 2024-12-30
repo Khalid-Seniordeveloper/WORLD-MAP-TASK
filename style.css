@@ -1,20 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
+
+
+body {
+    background: #ffffff;
     overflow-y: hidden;
     overflow-x: hidden;
-    
 }
+
 .allPaths {
     fill: #ececec;
-    stroke: #000;
-    stroke-width: 0.5;
+    stroke: #ffffff;
+    stroke-width: 1;
     cursor: pointer;
 }
 
@@ -24,29 +28,45 @@ body{
 
 #detail-container {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 5px;
     border-radius: 4px;
-    display: none; 
+    display: none;
     pointer-events: none;
-    transition: 0.2s; 
 }
 
-.name {
+.name, .year {
     margin: 0;
+    color: black;
 }
-#country-flag{
-    width: 50px; 
-    height: 30px;
-     display: inline-block;
-      margin-right: 10px;
+
+#country-flag {
+    width: 40px; 
+    height: 22px;
+    margin-right: 10px;
 }
-.head{
-    color:  black;
+
+.head {
+    color: black;
     font-size: 3rem;
     text-align: center;
     margin-top: 1rem;
 }
 
-
+#zoom-box {
+    position: fixed;
+    left: 10px;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    overflow: hidden;
+    display: none;
+    background-color: transparent;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
